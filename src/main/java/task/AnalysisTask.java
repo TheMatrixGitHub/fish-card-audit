@@ -10,7 +10,9 @@ import org.apache.poi.xssf.usermodel.*;
 import utils.ForMatJSONStr;
 import utils.JdbcUtil;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +23,7 @@ import java.util.Map;
  */
 public class AnalysisTask {
 
-    private static final String filePath = "/Users/sl/Downloads/temp/fish-card-audit/doc";
+    private static final String filePath = System.getProperty("user.dir") + File.separator + "doc" + File.separator;
 
     public static void analysis() {
         try {
@@ -92,7 +94,7 @@ public class AnalysisTask {
             }
 
             // 新建一输出流并把相应的excel文件存盘
-            FileOutputStream fos = new FileOutputStream(filePath + "/鱼卡投诉专用.xlsx");
+            FileOutputStream fos = new FileOutputStream(filePath + "鱼卡投诉专用.xlsx");
             workBook.write(fos);
             fos.flush();
             //操作结束，关闭流

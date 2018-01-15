@@ -23,16 +23,14 @@ public class JdbcUtil {
 
     private static Logger LOGGER = LoggerFactory.getLogger(JdbcUtil.class);
     private static final String DB_FILE_NAME = "db.properties";
-    private static final String CFG_PATH = "db.cfg.path";
 
     //加载DBCP配置文件
     static {
 
 
         try {
-            String basePath = System.getProperty(CFG_PATH);
 
-            File file = new File(basePath, DB_FILE_NAME);
+            File file = new File(System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "resources", DB_FILE_NAME);
             PROPERTIES.load(new FileInputStream(file));
 
             dataSource = BasicDataSourceFactory.createDataSource(PROPERTIES);

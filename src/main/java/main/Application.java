@@ -65,7 +65,7 @@ public class Application {
             });
 
             while (true) {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
                 if (((ThreadPoolExecutor) executorService).getActiveCount() == 0) {
                     break;
                 }
