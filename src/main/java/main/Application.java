@@ -27,10 +27,10 @@ public class Application {
             .build();
 
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        final String startTime = "15";
-        final String endTime = "15";
+        final String startTime = "13";
+        final String endTime = "13";
         final String qryMonth = "2018年01月";
         //主表cookie
         final String cookie = "code_v=20170913; dqmhIpCityInfos=%E5%8C%97%E4%BA%AC%E5%B8%82+%E8%81%94%E9%80%9A; svid=9CFB282DD73A0D0B; s_fid=249715028C12EE4E-32BFDBF204DA72E7; lvid=071d8dbcec067f385b958257db0b5d94; nvid=1; trkId=9A3FF427-79E7-4613-A61E-8AFB05EC6063; WT_FPC=id=19cfd108320580cd6e41515405264911; i_vnum=1; ijg=1515479749275; cityCode=bj; SHOPID_COOKIEID=10001; userId=201%7C20170100000012639029; s_cc=true; .ybtj.189.cn=EC7C51BA55C003625227EF5B11FF1761; WT_SS=151597856921965b2c8a24; aactgsh111220=15313750907; isLogin=logined; loginStatus=logined; JSESSIONID_bj=YhLhhc2ZXTn5RKSrwzmcHl6blXgypvnPXbJvndyvL943tdp8hBsD!1710478257; WT_si_n=WEB_Q_MYPHONEBILL_CHARGE_SXHFCX; trkHmClickCoords=93%2C350%2C3280; s_sq=%5B%5BB%5D%5D; Hm_lvt_5b3beae528c7fc9af9c016650f4581e0=1515980267,1515992740,1515992752,1515992785; Hm_lpvt_5b3beae528c7fc9af9c016650f4581e0=1515992785";
@@ -45,8 +45,11 @@ public class Application {
             retryer.call(new Callable<Void>() {
                 public Void call() throws Exception {
 
-                    //用于产生 费用查询->通信详单查询中的上网详单   记录少的A表  主表
-//                    executorService.submit(new CheckDetailedListCrawlTask(startTime, endTime, qryMonth, cookie, dataFlowThresholdValue));
+                    if ("1".equals(args[0])) {
+                        //用于产生 费用查询->通信详单查询中的上网详单   记录少的A表  主表
+                        executorService.submit(new CheckDetailedListCrawlTask(startTime, endTime, qryMonth, cookie, dataFlowThresholdValue));
+
+                    }
 
                     return null;
                 }
@@ -56,8 +59,12 @@ public class Application {
 
             retryer.call(new Callable<Void>() {
                 public Void call() throws Exception {
-                    //用于产生 套餐查询->流量使用去向查询->流量上网记录  记录多的B表 从表
-                    crawlTrafficInternetRecordsByMultithreadedThread(Integer.valueOf(startTime), Integer.valueOf(endTime), qryMonth, trafficInternetRecordsCookie);
+
+                    if ("1".equals(args[1])) {
+                        //用于产生 套餐查询->流量使用去向查询->流量上网记录  记录多的B表 从表
+                        crawlTrafficInternetRecordsByMultithreadedThread(Integer.valueOf(startTime), Integer.valueOf(endTime), qryMonth, trafficInternetRecordsCookie);
+
+                    }
 
                     return null;
                 }
