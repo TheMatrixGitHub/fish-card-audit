@@ -49,7 +49,7 @@ public class AnalysisTask {
 
 
                 if (trafficInternetRecords.size() != 0) {
-                    System.out.println(ForMatJSONStr.format(JSONObject.toJSONString(detailedFlow)));
+//                    System.out.println(ForMatJSONStr.format(JSONObject.toJSONString(detailedFlow)));
                     int lastRowNum = sheet.getLastRowNum() + 1;
 
                     for (int k = 0; k < trafficInternetRecords.size(); k++) {

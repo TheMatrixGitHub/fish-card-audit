@@ -33,7 +33,9 @@ public class CheckDetailedListCrawlTask implements Callable {
     private String qryMonth;
     private String cookie;
 
-    //流量过滤阈值
+    /**
+     * 流量过滤阈值
+     */
     private Integer dataFlowThresholdValue;
 
     public CheckDetailedListCrawlTask(String startTime, String endTime, String qryMonth, String cookie, Integer dataFlowThresholdValue) {
@@ -124,7 +126,9 @@ public class CheckDetailedListCrawlTask implements Callable {
 
                 Document doc = Jsoup.parse(response.body().string());
 
-
+                if (doc.toString().contains("未登录")) {
+                    throw new IllegalStateException("回话超时请重新获取cookie");
+                }
                 Elements e = doc.getElementsByClass("color-6 fs-16");
                 int total = Integer.parseInt(e.get(0).text());
 
