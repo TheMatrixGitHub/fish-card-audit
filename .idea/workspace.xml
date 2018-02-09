@@ -3,19 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="c292821a-c29c-4741-9e1b-30fed79e8dd2" name="Default" comment="配置文件更新">
       <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/IdentificationCodes.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ec10b8c-96be-493c-b92f-d4bca8623693.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/fish-card-audit.iml" afterPath="$PROJECT_DIR$/fish-card-audit.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Application.java" afterPath="$PROJECT_DIR$/src/main/java/main/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task/AnalysisTask.java" afterPath="$PROJECT_DIR$/src/main/java/task/AnalysisTask.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java" afterPath="$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java" afterPath="$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" afterPath="$PROJECT_DIR$/target/classes/db.properties" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/Application$1.class" afterPath="$PROJECT_DIR$/target/classes/main/Application$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/Application$2.class" afterPath="$PROJECT_DIR$/target/classes/main/Application$2.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/Application.class" afterPath="$PROJECT_DIR$/target/classes/main/Application.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/task/AnalysisTask.class" afterPath="$PROJECT_DIR$/target/classes/task/AnalysisTask.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/task/CheckDetailedListCrawlTask.class" afterPath="$PROJECT_DIR$/target/classes/task/CheckDetailedListCrawlTask.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task/TrafficInternetRecordsCrawlTask.class" afterPath="$PROJECT_DIR$/target/classes/task/TrafficInternetRecordsCrawlTask.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/test.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/utils/JdbcUtil.class" afterPath="$PROJECT_DIR$/target/classes/utils/JdbcUtil.class" />
     </list>
@@ -26,6 +31,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/fish_card_audit$Application.coverage" NAME="Application Coverage Results" MODIFIED="1518054210577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -39,35 +49,41 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="aplatform@10.1.245.250" type="feb32156:DbDataSourceImpl" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="aplatform@10.1.245.250" type="feb32156:DbDataSourceImpl" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="aplatform@10.1.245.250" type="feb32156:DbDataSourceImpl" />
+        <item name="test@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="aplatform: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="aplatform@10.1.245.250" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="aplatform: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="code.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doc/code.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Application#0" expanded="false" />
+                <element signature="e#1056#1078#0" expanded="true" />
+                <element signature="initializer##0;class#Application#0" expanded="false" />
+                <element signature="class#1193:1596" expanded="false" />
+                <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
+                <element signature="e#1713#1719#0" expanded="true" />
+                <element signature="e#3708#4127#0" expanded="true" />
+                <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
+                <element signature="method#getCookie#0;class#Application#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -92,19 +108,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3ec10b8c-96be-493c-b92f-d4bca8623693/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/main/MultiThreadCrawlTasks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/PictureRemove.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/TestTess4j.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/test.html" />
         <option value="$PROJECT_DIR$/src/main/java/main/IdentificationCodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/HttpLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/task/AnalysisTask.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f153855c-15a4-466a-a024-650a0362fff5/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Application.java" />
       </list>
     </option>
@@ -161,8 +178,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,12 +188,48 @@
             <path>
               <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
               <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fish-card-audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fish-card-audit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -187,11 +238,11 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/pom.xml&#10;ap&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;jdbc&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/utils/JdbcUtil.java&#10;app&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;applica&#9;FILE&#9;file:///Users/sl/Downloads/temp/fish-card-audit/src/main/java/main/Application.java&#10;db&#9;PSI&#9;JAVA://utils.JdbcUtil&#10;/main&#9;FILE&#9;file:///Users/sl/Downloads/temp/fish-card-audit/src/main/java/main" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;applica&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;appli&#9;RUN_CONFIGURATION&#9;Application&#10;db&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/resources/db.properties&#10;pom&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/pom.xml&#10;ap&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;jdbc&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/utils/JdbcUtil.java&#10;app&#9;FILE&#9;file:///Users/sl/EngineeringCode/fish-card-audit/src/main/java/main/Application.java&#10;/main&#9;FILE&#9;file:///Users/sl/Downloads/temp/fish-card-audit/src/main/java/main" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -233,7 +284,7 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="main.Application" />
-      <option name="VM_PARAMETERS" value="-DstartTime=1 -DendTime=25 -DqryMonth=&quot;2018年01月&quot; -Dcookie=&quot;code_v=20170913; svid=BDDD694740EE80CF; s_fid=67C7B4FB2C4031EF-2367CC5062BF09A3; lvid=a590976dcee6be6122e2f373b2fd89bc; nvid=1; trkId=97F3F26E-3A84-4E64-87E9-5AA69649D644; WT_FPC=id=19df3e6a8035e9051be1516426481316; dqmhIpCityInfos=%E5%8C%97%E4%BA%AC%E5%B8%82+%E7%94%B5%E4%BF%A1; cityCode=bj; userId=201%7C20170100000012639029; .ybtj.189.cn=EC7C51BA55C003625227EF5B11FF1761; s_cc=true; aactgsh111220=15313750907; isLogin=logined; SHOPID_COOKIEID=10001; loginStatus=logined; trkHmClickCoords=93%2C350%2C2377; s_sq=%5B%5BB%5D%5D; JSESSIONID_bj=nD8ZhpyHSLt749K0H41Sr7Mcjhg7xhly1n23rMgX6h8qV6jc1mL2!-721067785; Hm_lvt_5b3beae528c7fc9af9c016650f4581e0=1516773367,1516773880,1516774069,1516843759; Hm_lpvt_5b3beae528c7fc9af9c016650f4581e0=1516843759; WT_SS=1516843762328a6863832c; WT_si_n=WEB_Q_MYPHONEBILL_CREDIT_XYDCX&quot;" />
+      <option name="VM_PARAMETERS" value="-DdataFlowThresholdValue=0 -DstartTime=8 -DendTime=9 -DqryMonth=&quot;2018年02月&quot; -Dcookie=&quot;svid=B5B495F2B1815277; s_fid=622A9A27F8DCB055-3F35F87EB4D253A6; lvid=48d9050682bfe5bb377b158aa467e7a5; nvid=1; trkId=66F7D157-ECD6-4B48-AF2A-36FD3499276C; userId=201%7C20170100000012639029; SHOPID_COOKIEID=10001; cityCode=bj; WT_FPC=id=13cfb4229dae5bfd5641517188562497; Hm_lvt_5b3beae528c7fc9af9c016650f4581e0=1517992123,1517992135,1518052419,1518054180; s_cc=true; aactgsh111220=15313750907; isLogin=logined; .ybtj.189.cn=EC7C51BA55C003625227EF5B11FF1761; loginStatus=logined; trkHmClickCoords=85%2C350%2C2219; s_sq=%5B%5BB%5D%5D; JSESSIONID_bj=RLr6h9TdPnGpytPTFPpBp1zfH2WdVPCStGvJtTCmqsf3GLCLkb1K!-972775837&quot;" />
       <option name="PROGRAM_PARAMETERS" value="1 0" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -446,7 +497,28 @@
       <workItem from="1516775671929" duration="58000" />
       <workItem from="1516776049638" duration="965000" />
       <workItem from="1516843874341" duration="1771000" />
-      <workItem from="1517188670270" duration="14000" />
+      <workItem from="1517188670270" duration="804000" />
+      <workItem from="1517191038805" duration="11000" />
+      <workItem from="1517192040407" duration="107000" />
+      <workItem from="1517193008122" duration="278000" />
+      <workItem from="1517193460229" duration="95000" />
+      <workItem from="1517193597065" duration="1279000" />
+      <workItem from="1517297204860" duration="1161000" />
+      <workItem from="1517360976594" duration="1366000" />
+      <workItem from="1517391839548" duration="67000" />
+      <workItem from="1517447542258" duration="390000" />
+      <workItem from="1517451488298" duration="140000" />
+      <workItem from="1517537433390" duration="121000" />
+      <workItem from="1517542160190" duration="2421000" />
+      <workItem from="1517811554510" duration="1237000" />
+      <workItem from="1517979609031" duration="997000" />
+      <workItem from="1517988760730" duration="940000" />
+      <workItem from="1517990293653" duration="166000" />
+      <workItem from="1517992079954" duration="574000" />
+      <workItem from="1518052398858" duration="124000" />
+      <workItem from="1518054196055" duration="67000" />
+      <workItem from="1518072639804" duration="899000" />
+      <workItem from="1518145223336" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="配置文件更新">
       <created>1516001740100</created>
@@ -462,11 +534,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516002694704</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="传参方式变更">
+      <created>1517188770465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517188770465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54629000" />
+    <option name="totallyTimeSpent" value="68033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
@@ -475,23 +554,24 @@
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66959065" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3873582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31361425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -501,9 +581,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -526,7 +606,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="配置文件更新" />
     <MESSAGE value="通过启动参数配置任务的执行  1执行  0不执行" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过启动参数配置任务的执行  1执行  0不执行" />
+    <MESSAGE value="传参方式变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="传参方式变更" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,7 +620,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/main/Application.java</url>
-          <line>225</line>
+          <line>227</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -557,24 +638,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java</url>
-          <line>120</line>
+          <line>123</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/Application.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/main/Application.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -635,42 +704,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="357">
+          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
-            <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
-            <element signature="method#getCookie#0;class#Application#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/TestTess4j.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/TestTess4j.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#Application#0" expanded="false" />
-            <element signature="initializer##0;class#Application#0" expanded="false" />
-            <element signature="class#1193:1596" expanded="false" />
-            <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -683,26 +726,12 @@
           <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
-            <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
-            <element signature="method#getCookie#0;class#Application#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding>
-            <element signature="docComment;class#Application#0" expanded="false" />
-            <element signature="initializer##0;class#Application#0" expanded="false" />
-            <element signature="class#1193:1596" expanded="false" />
-            <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -731,10 +760,12 @@
           <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -747,10 +778,12 @@
           <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -763,10 +796,12 @@
           <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -779,10 +814,12 @@
           <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -795,10 +832,12 @@
           <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -811,10 +850,12 @@
           <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
             <element signature="initializer##0;class#Application#0" expanded="false" />
             <element signature="class#1193:1596" expanded="false" />
             <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
             <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
             <element signature="method#getCookie#0;class#Application#0" expanded="false" />
           </folding>
@@ -842,24 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fish-card-audit.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -958,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.1/okhttp-3.3.1.jar!/okhttp3/OkHttpClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1000,26 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task/AnalysisTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/HttpLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1042,25 +1046,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/TestTess4j.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="76" column="25" lean-forward="true" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#Application#0" expanded="false" />
-            <element signature="initializer##0;class#Application#0" expanded="false" />
-            <element signature="class#1193:1596" expanded="false" />
-            <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
-            <element signature="method#crawlTrafficInternetRecordsByMultithreadedThread#0;class#Application#0" expanded="false" />
-            <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
-            <element signature="method#getCookie#0;class#Application#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cb7267e4/f153855c-15a4-466a-a024-650a0362fff5/test.detailed_flow">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="88" lean-forward="false" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/cb7267e4/f153855c-15a4-466a-a024-650a0362fff5/test.traffic_internet_records">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cb7267e4/f153855c-15a4-466a-a024-650a0362fff5/test.traffic_internet_records">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f153855c-15a4-466a-a024-650a0362fff5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task/CheckDetailedListCrawlTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2139">
+          <caret line="153" column="29" lean-forward="false" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task/TrafficInternetRecordsCrawlTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/code.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/HttpLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Application#0" expanded="false" />
+            <element signature="e#1056#1078#0" expanded="true" />
+            <element signature="initializer##0;class#Application#0" expanded="false" />
+            <element signature="class#1193:1596" expanded="false" />
+            <element signature="method#loadForRequest#0;class#1193:1596" expanded="false" />
+            <element signature="e#1713#1719#0" expanded="true" />
+            <element signature="e#3708#4127#0" expanded="true" />
+            <element signature="docComment;method#getCookie#0;class#Application#0" expanded="false" />
+            <element signature="method#getCookie#0;class#Application#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
@@ -1131,7 +1210,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1151,7 +1229,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>Maven: com.sun.jmx:jmxri:1.2.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

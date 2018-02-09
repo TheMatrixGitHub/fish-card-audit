@@ -84,7 +84,7 @@ public class Application {
             final String trafficInternetRecordsCookie = "code_v=20170913; dqmhIpCityInfos=%E5%8C%97%E4%BA%AC%E5%B8%82+%E8%81%94%E9%80%9A; svid=9CFB282DD73A0D0B; s_fid=249715028C12EE4E-32BFDBF204DA72E7; lvid=071d8dbcec067f385b958257db0b5d94; nvid=1; trkId=9A3FF427-79E7-4613-A61E-8AFB05EC6063; WT_FPC=id=19cfd108320580cd6e41515405264911; d_source=other; i_vnum=1; ijg=1515479749275; cityCode=bj; s_cc=true; SHOPID_COOKIEID=10001; trkHmPageName=%2Fbj%2F; trkHmCoords=0; trkHmCity=0; trkHmLinks=0; userId=201%7C20170100000012639029; .ybtj.189.cn=EC7C51BA55C003625227EF5B11FF1761; JSESSIONID_bj=L5JshVrTLyZ2Ld2TydcmDn8LbWxRJQLn07LJKRf46sd7TpNw7RT2!-1903192657; WT_SS=1515547574536c057ed536; WT_si_n=WEB_Q_MYLIST_THEPHONELIST_XDCX; loginStatus=non-logined; Hm_lvt_5b3beae528c7fc9af9c016650f4581e0=1515498788,1515498829,1515547574,1515549229; Hm_lpvt_5b3beae528c7fc9af9c016650f4581e0=1515549229; s_sq=eshipeship-189-all%3D%2526pid%253D%25252Fiframe%25252Flocal%25252FflowInit.action%2526pidt%253D1%2526oid%253Djavascript%25253Apage%25252854%25252C2%252529%2526ot%253DA; trkHmClickCoords=951%2C440%2C4779";
 
             //流量过滤阈值 单位：M
-            final Integer dataFlowThresholdValue = 1;
+            final Integer dataFlowThresholdValue = Integer.valueOf(System.getProperty("dataFlowThresholdValue"));
             retryer.call(new Callable<Void>() {
                 public Void call() throws Exception {
 
@@ -98,6 +98,7 @@ public class Application {
                 }
 
             });
+
 
 
             retryer.call(new Callable<Void>() {
@@ -122,6 +123,7 @@ public class Application {
             }
 
             AnalysisTask.analysis();
+            System.exit(1);
 
             executorService.shutdown();
         } catch (Exception e) {

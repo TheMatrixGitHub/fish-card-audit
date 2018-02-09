@@ -20,6 +20,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -32,6 +34,7 @@ public class CheckDetailedListCrawlTask implements Callable {
     private String endTime;
     private String qryMonth;
     private String cookie;
+
 
     /**
      * 流量过滤阈值
@@ -58,13 +61,13 @@ public class CheckDetailedListCrawlTask implements Callable {
         String url = "http://bj.189.cn/iframe/feequery/billDetailQuery.action";
 
         try {
-            QueryRunner runner = new QueryRunner(JdbcUtil.getDataSource());
+            final QueryRunner runner = new QueryRunner(JdbcUtil.getDataSource());
 
             //首先清除detailed_flow表中的记录
             String truncateSql = "truncate table detailed_flow";
             runner.update(truncateSql);
 
-            String insertSql = "INSERT INTO detailed_flow  (" +
+            final String insertSql = "INSERT INTO detailed_flow  (" +
                     "start_time," +
                     "end_time," +
                     "flow," +
@@ -148,8 +151,8 @@ public class CheckDetailedListCrawlTask implements Callable {
                         int index;
 
 
-                        if ((index = dataFlowValue.indexOf("MB")) != -1 && Integer.parseInt(dataFlowValue.substring(0, index)) > dataFlowThresholdValue && billDetailElements.get(7).text().contains("非定向")) {
-                            DetailedFlow detailedFlow = new DetailedFlow();
+                        if ((dataFlowThresholdValue == 0 && billDetailElements.get(7).text().contains("非定向")) || ((index = dataFlowValue.indexOf("MB")) != -1 && Integer.parseInt(dataFlowValue.substring(0, index)) > dataFlowThresholdValue && billDetailElements.get(7).text().contains("非定向"))) {
+                            final DetailedFlow detailedFlow = new DetailedFlow();
 
                             Date startDate = dateFormat.parse(billDetailElements.get(1).text());
 
@@ -187,6 +190,7 @@ public class CheckDetailedListCrawlTask implements Callable {
                                     detailedFlow.getBelong_area(),
                                     detailedFlow.getKey_type());
 
+
                             overThresholdCount++;
                             System.out.printf("当前已处理条数：%s", overThresholdCount);
                             System.out.println(ForMatJSONStr.format(JSONObject.toJSONString(detailedFlow)));
@@ -198,10 +202,7 @@ public class CheckDetailedListCrawlTask implements Callable {
 
 
             System.out.println("问题详单任务处理完毕！");
-        } catch (
-                Exception e)
-
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             throw e;
         }

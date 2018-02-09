@@ -16,6 +16,8 @@ import utils.JdbcUtil;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -26,6 +28,8 @@ public class TrafficInternetRecordsCrawlTask implements Callable {
     private String qryTime;
     private String qryMonth;
     private String cookie;
+
+    private static ExecutorService executorService = Executors.newFixedThreadPool(50);
 
     public TrafficInternetRecordsCrawlTask(String qryTime, String qryMonth, String cookie) {
         this.qryTime = qryTime;
@@ -40,15 +44,15 @@ public class TrafficInternetRecordsCrawlTask implements Callable {
 
 
         String accNum = "15313750907";
-        String flowPageSize = "50";
+        String flowPageSize = "300";
 
         String url = "http://bj.189.cn/iframe/local/queryFlowRecord.action";
 
         try {
 
-            QueryRunner runner = new QueryRunner(JdbcUtil.getDataSource());
+            final QueryRunner runner = new QueryRunner(JdbcUtil.getDataSource());
 
-            String insertSql = "INSERT INTO traffic_internet_records  (" +
+            final String insertSql = "INSERT INTO traffic_internet_records  (" +
                     "start_time," +
                     "business_name," +
                     "url) VALUES (?,?,?)";
@@ -107,7 +111,7 @@ public class TrafficInternetRecordsCrawlTask implements Callable {
                     if (tdElements.size() == 4) {
 
 
-                        TrafficInternetRecords trafficInternetRecord = new TrafficInternetRecords();
+                        final TrafficInternetRecords trafficInternetRecord = new TrafficInternetRecords();
                         Calendar calendar = Calendar.getInstance();
                         calendar.set(Calendar.YEAR, Integer.parseInt(qryMonth.substring(0, 4)));
                         calendar.set(Calendar.MONTH, Integer.parseInt(qryMonth.substring(5, 7)) - 1);
@@ -121,10 +125,16 @@ public class TrafficInternetRecordsCrawlTask implements Callable {
                         trafficInternetRecord.setBusiness_name(tdElements.get(2).text());
                         trafficInternetRecord.setUrl(tdElements.get(3).text());
 
-                        runner.update(insertSql,
-                                trafficInternetRecord.getStart_time(),
-                                trafficInternetRecord.getBusiness_name(),
-                                trafficInternetRecord.getUrl());
+
+                        executorService.submit(new Callable<Boolean>() {
+                            public Boolean call() throws Exception {
+                                runner.update(insertSql,
+                                        trafficInternetRecord.getStart_time(),
+                                        trafficInternetRecord.getBusiness_name(),
+                                        trafficInternetRecord.getUrl());
+                                return true;
+                            }
+                        });
                         realCount++;
 
                         System.out.printf("%s 已处理条数: %s", Thread.currentThread().getName(), realCount);
@@ -138,6 +148,8 @@ public class TrafficInternetRecordsCrawlTask implements Callable {
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
+        } finally {
+//            executorService.shutdown();
         }
         return null;
 
